@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Expanse Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">
+                 <svg viewBox="0 0 20 20" fill="none">
+          <path d="M4 10C4 6.5 7 3.5 10 2C13 3.5 16 6.5 16 10C16 13.3 13.3 16 10 16C6.7 16 4 13.3 4 10Z" fill="white" opacity="0.25"/>
+          <path d="M10 6V11M7.5 8.5H12.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+    </div>
+        <div class="logo-text">Expense Tracker</div>
+ </div>
+  <div class="card">
+    <div class="step-dots">
+        <div class="dot active"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+         </div>
+         <div class="card-header">
+            <h1>Buat Akun Baru</h1>
+             <p>Lacak Keuangan Mu Secara Gratis Disini</p>
+             </div>
+               <form id="register-form">
+  <div class="field">
+    <label>Nama Lengkap</label>
+    <input type="text" placeholder="Masukan Nama Kamu" />
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Masukan Email Kamu" />
+  </div>
+
+  <div class="field">
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Min 8 Karakter" oninput="checkStrength(this.value)" />
+    <div class="strength-bar"><div class="strength-fill" id="strength-fill"></div></div>
+    <p class="hint" id="strength-hint">Masukan Password</p>
+  </div>
+
+  <div class="field">
+    <label>Konfirmasi Password</label>
+    <input type="password" id="confirm" placeholder="Ulangi Password" />
+  </div>
+
+  <button type="submit" class="btn">Buat Akun</button>
+</form>
+                 <p class="terms">
+                    Dengan Mendaftar, Kamu Menyetujui <a href="#" >Syarat Dan Ketentuan</a>Dan  <a href="#">Kebijakan Privasi</a> Kami </p>
+                    <div class="divider">Atau</div>
+                    <div class="switch-link">
+                        Sudah Punya Akun? <a href="login.html">Masuk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="register.js"></script>
+</body>
+</html>
+                        

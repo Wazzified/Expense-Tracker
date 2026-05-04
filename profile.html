@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil — Expense Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="auth.css" />
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="topbar">
+      <a href="dashboard.html" class="back-btn">← Kembali</a>
+      <span class="app-name">Profil Saya</span>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <button class="toggle-dark" id="toggle-dark">🌙</button>
+        <button class="logout-btn" id="logout-btn">Keluar</button>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="avatar-wrap">
+        <div class="avatar" id="avatar-text">U</div>
+      </div>
+      <div class="user-email" id="user-email">loading...</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h1>Ganti Username</h1>
+        <p>Username akan tampil di dashboard</p>
+      </div>
+      <form id="username-form">
+        <div class="field">
+          <label>Username baru</label>
+          <input type="text" id="new-username" placeholder="Contoh: budisantoso" />
+        </div>
+        <button type="submit" class="btn">Simpan username</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h1>Ganti Password</h1>
+        <p>Pastikan password baru minimal 8 karakter</p>
+      </div>
+      <form id="password-form">
+        <div class="field">
+          <label>Password baru</label>
+          <input type="password" id="new-password" placeholder="Min. 8 karakter" />
+        </div>
+        <div class="field">
+          <label>Konfirmasi password baru</label>
+          <input type="password" id="confirm-password" placeholder="Ulangi password baru" />
+        </div>
+        <button type="submit" class="btn">Simpan password</button>
+      </form>
+    </div>
+
+    <div class="card danger-card">
+      <div class="card-header">
+        <h1>Hapus Akun</h1>
+        <p>Aksi ini tidak bisa dibatalkan. Semua data akan hilang.</p>
+      </div>
+      <button class="btn btn-danger" id="delete-btn">Hapus akun saya</button>
+    </div>
+
+  </div>
+
+  <script type="module" src="profile.js"></script>
+</body>
+</html>
